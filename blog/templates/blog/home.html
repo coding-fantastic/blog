@@ -2,6 +2,7 @@
 {% block content %}
     {% for post in posts %}
         <article class="media content-section">
+          <!-- add images left side of the article on home page --> 
           <img class="rounded-circle article-img" src="{{ post.author.profile.image.url }}">
           <div class="media-body">
             <div class="article-metadata">
