@@ -31,6 +31,7 @@ def profile(request):
             return redirect('profile')
 
     else:
+        # populate users form with current information  
         u_form = UserUpdateForm(instance=request.user)
         p_form = ProfileUpdateForm(instance=request.user.profile)
 
