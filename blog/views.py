@@ -21,7 +21,6 @@ class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html'  # <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
-    # order post from the newest to oldest
     ordering = ['-date_posted']
 
 
