@@ -11,7 +11,7 @@ class Profile(models.Model):
         return f'{self.user.username} Profile'
 
     # method to resize image using pillow to save file
-    def save(self):
+    def save(self, *args, **kawrgs):
         super().save()
 
         img = Image.open(self.image.path)
